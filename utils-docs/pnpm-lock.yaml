@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      asuns-utils:
+        specifier: ^1.0.3
+        version: 1.0.3
+
+packages:
+
+  '@pureadmin/utils@2.4.8':
+    resolution: {integrity: sha512-7baOiunmno3mlvk7oKIrEvIEVAbJgIrvvMw9EJMOvTmebfn31F5ps9JyIeDzsnVRABZLSEg0iIVVfYe+DGAeqg==}
+    peerDependencies:
+      echarts: '*'
+      vue: '*'
+    peerDependenciesMeta:
+      echarts:
+        optional: true
+      vue:
+        optional: true
+
+  asuns-utils@1.0.3:
+    resolution: {integrity: sha512-T3d8LNUB5Ubnh6o4fEynsyKajerGM61MAQH5TDgmioLjf1nSlf7/gS2ox1D28heG7nblC+0LFQmCxm8zV5TjCw==}
+
+snapshots:
+
+  '@pureadmin/utils@2.4.8': {}
+
+  asuns-utils@1.0.3:
+    dependencies:
+      '@pureadmin/utils': 2.4.8
+    transitivePeerDependencies:
+      - echarts
+      - vue

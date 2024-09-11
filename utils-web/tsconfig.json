@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,  // 生成 .d.ts 文件
+    "declarationMap": true,  // （可选）生成声明文件的 source map
+    "target": "ES2017",
+    "module": "ESNext",
+    "lib": [
+      "dom",
+      "es6",
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "noEmit": true, // tsc 仅检查，不生成 js 文件
+    "sourceMap": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": false  //保留jsdoc注释
+  },
+  "include": [
+    "src/**/*",
+  ]
+}
